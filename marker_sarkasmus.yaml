@@ -1,0 +1,17 @@
+kategorie: ATOMIC
+marker:
+  category: Atomic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für marker_sarkasmus
+  examples:
+  - Automatisch generierte Beschreibung für marker_sarkasmus
+  id: M_MARKER_SARKASMUS
+  level: 1
+  name: marker_sarkasmus
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_C994
+  semantic_tags:
+  - marker-sarkasmus
+marker_name: marker_sarkasmus
+tags:
+- needs_review

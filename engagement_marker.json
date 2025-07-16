@@ -1,0 +1,26 @@
+{
+  "name": "Engagement Indicators",
+  "keywords": [
+    "interessant",
+    "spannend",
+    "fasziniert",
+    "begeistert",
+    "neugierig",
+    "verstehen",
+    "lernen",
+    "entwickeln",
+    "verbessern",
+    "wachsen"
+  ],
+  "semantic_hints": [
+    "curiosity",
+    "enthusiasm",
+    "learning mindset",
+    "growth orientation"
+  ],
+  "prompt_inserts": {
+    "de": "Der Sprecher zeigt hohes Engagement und Lernbereitschaft",
+    "en": "The speaker shows high engagement and willingness to learn"
+  },
+  "version": "1.0.0"
+} 

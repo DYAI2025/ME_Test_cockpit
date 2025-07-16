@@ -1,0 +1,19 @@
+name: "Confidence Indicators"
+description: "Erkennt sprachliche Indikatoren für Selbstvertrauen und Unsicherheit"
+category: "communication"
+keywords:
+  - "sicher"
+  - "überzeugt"
+  - "klar"
+  - "bestimmt"
+  - "zweifle"
+  - "unsicher"
+  - "vielleicht"
+  - "möglicherweise"
+  - "denke"
+  - "glaube"
+patterns:
+  - r"\b(ich bin mir sicher|ich weiß|ich kann)\b"
+  - r"\b(ich denke|ich glaube|ich vermute)\b"
+  - r"\b(es könnte sein|es wäre möglich)\b"
+weight: 0.7 

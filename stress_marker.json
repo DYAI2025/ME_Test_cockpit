@@ -1,0 +1,26 @@
+{
+  "name": "Stress Indicators",
+  "keywords": [
+    "stressig",
+    "anstrengend",
+    "überfordert",
+    "erschöpft",
+    "nervös",
+    "angespannt",
+    "hektisch",
+    "Zeitdruck",
+    "Deadline",
+    "Termin"
+  ],
+  "semantic_hints": [
+    "emotional pressure",
+    "time pressure",
+    "overwhelm",
+    "burnout risk"
+  ],
+  "prompt_inserts": {
+    "de": "Der Sprecher zeigt deutliche Stress-Indikatoren und Zeitdruck",
+    "en": "The speaker shows clear stress indicators and time pressure"
+  },
+  "version": "1.0.0"
+} 

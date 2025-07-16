@@ -1,0 +1,21 @@
+kategorie: UNCATEGORIZED
+marker:
+  category: Semantic
+  context_rule: []
+  description: Temporärer ID-Marker für System-interne Verarbeitungszwecke
+  examples: null
+  id: S_ID
+  level: 2
+  name: -_ID
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250712_176F
+  semantic_tags:
+  - --id-marker
+marker_name: -_ID_MARKER
+metadata:
+  created_at: '2025-07-12T22:42:26.897670'
+  created_by: FRAUSAR_GUI_v2
+  tags:
+  - neu_erstellt
+  - needs_review
+  version: 1.0

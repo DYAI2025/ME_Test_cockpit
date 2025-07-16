@@ -1,0 +1,26 @@
+{
+  "name": "Confidence Indicators",
+  "keywords": [
+    "sicher",
+    "überzeugt",
+    "klar",
+    "bestimmt",
+    "zweifle",
+    "unsicher",
+    "vielleicht",
+    "möglicherweise",
+    "denke",
+    "glaube"
+  ],
+  "semantic_hints": [
+    "self-assurance",
+    "uncertainty",
+    "decision making",
+    "self-doubt"
+  ],
+  "prompt_inserts": {
+    "de": "Der Sprecher zeigt Unsicherheit oder Selbstzweifel",
+    "en": "The speaker shows uncertainty or self-doubt"
+  },
+  "version": "1.0.0"
+} 

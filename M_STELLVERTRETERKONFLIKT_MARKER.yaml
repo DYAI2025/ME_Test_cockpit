@@ -1,0 +1,285 @@
+id: M_STELLVERTRETERKONFLIKT
+name: Stellvertreterkonflikt
+level: 2
+category: dynamics
+cluster:
+- conflict_avoidance
+- hidden_motivation
+meta_marker:
+- MM_INDIREKTER_KONFLIKT
+status: review
+author: ben_2025
+created_at: '2025-07-14'
+lang: de
+description: 'Marker für indirekte, verschobene Konfliktführung: Die eigentliche emotionale
+  Motivation (z.B. Eifersucht, Neid, Angst, Verletztheit) bleibt unausgesprochen.
+  Die Diskussion wird auf ein Nebenthema verlagert (Prinzipien, Sicherheit, Ordnung,
+  Budget, Kompetenz), um ohne Offenlegung eigener Verletzlichkeit Kontrolle, Vorteil
+  oder moralische Überlegenheit zu beanspruchen.'
+pattern:
+- Plötzliche Sorge um rationale, organisatorische oder moralische Details, während
+  im Hintergrund ein anderes Gefühl steht.
+- Diskussionen, die auf der Sachebene bleiben, obwohl der wahre Grund emotional ist.
+- Begründungen, die moralisch, vernünftig oder fürsorglich klingen, aber dem Anderen
+  das Handeln erschweren oder Schuld zuweisen.
+- Scheinbar selbstlose Bedenken, die faktisch Kontrolle, Überlegenheit oder Vorteil
+  sichern.
+rules:
+- type: negation
+  description: Keine direkte Benennung der eigentlichen Emotion (Eifersucht, Angst,
+    Neid, Unsicherheit).
+- type: co_occurrence
+  condition: emotionale Spannung, die sich im Verhalten/Timing zeigt
+- type: role_inversion
+  description: Vorteil, Kontrolle oder Überlegenheit werden durch den Vorwand beansprucht.
+tags:
+- konflikt
+- indirekt
+- stellvertreter
+- beziehung
+- hidden_agenda
+semantic_grabber_id: AUTO_SEM_20250714_6E57
+scoring:
+  weight: 1.3
+  impact: mid
+examples:
+- title: Finanzen als Vorwand
+  text: 'B möchte verreisen. A: "Schatz, hast du gesehen, wie viel wir diesen Monat
+    schon ausgegeben haben? Deine Reise… ich weiß nicht, ob das so klug ist."'
+  hidden_motivation: Eifersucht auf Zeit ohne A
+- title: Kompetenz in Frage gestellt
+  text: 'Team-Meeting, Kollege A zu B: "Bevor wir uns später Ärger einhandeln: Hast
+    du alle Zahlen geprüft? Letztes Mal gab''s da eine Lücke. Ich kann da nachher
+    drüber schauen."'
+  hidden_motivation: Neid, Angst vor Statusverlust
+- title: Unordnung als Streitpunkt
+  text: A fühlt sich vernachlässigt, B beschäftigt sich mit neuem Hobby. "So ein Chaos
+    überall – ich kann hier gar nicht mehr entspannen. Musst du immer alles liegen
+    lassen?"
+  hidden_motivation: Verletztheit, Wunsch nach mehr Aufmerksamkeit
+- title: Prinzipien als Totschlagargument
+  text: 'B schlägt vor, Freunde zu besuchen. A: "Nein, zu denen geh ich nicht. Ich
+    bin strikt gegen Rauchen in geschlossenen Räumen, das weißt du. Da bin ich konsequent."'
+  hidden_motivation: Vermeidung einer Person aus Eifersucht/Misstrauen
+- title: Sicherheit als Begründung
+  text: 'B will ein sportliches Fahrrad kaufen. A: "Hast du mal die Unfallzahlen gesehen?
+    Ich find das echt gefährlich. Ein normales Bike wär sicherer."'
+  hidden_motivation: Neid, Angst vor weniger Einfluss
+- title: Wohlergehen vorschieben
+  text: 'B möchte abends ausgehen. A: "Ich glaub ehrlich, du solltest mal mehr auf
+    deinen Schlaf achten – dauernd unterwegs ist doch nicht gesund."'
+  hidden_motivation: Angst, den Partner zu verlieren; Wunsch nach Kontrolle
+- title: Zeitmanagement/Selbstfürsorge als Vorwand
+  text: 'Kollegin B schlägt gemeinsames Projekt vor. A: "Ich habe gelernt, Grenzen
+    zu setzen und muss gerade an mein eigenes Wohl denken. Vielleicht passt das einfach
+    nicht mehr zu meiner Work-Life-Balance."'
+  hidden_motivation: Missgunst, Angst vor Überflügeltwerden
+- title: '"Fürsorglicher" Kontaktabbruch'
+  text: 'Nach Streit, A zu B: "Ich glaube, es ist besser, wenn wir uns eine Weile
+    nicht sehen. Du brauchst Raum, und ich will dich da nicht einengen."'
+  hidden_motivation: Selbstschutz, aber auch Strafe/Kontrolle durch Rückzug
+metadata:
+  created_at: '2025-07-14T00:42:25.155399'
+  created_by: FRAUSAR_GUI_v2
+  version: '1.0'
+  tags:
+  - neu_erstellt
+  - needs_review
+  repaired_at: '2025-07-14T01:16:15.478607'
+  repaired_by: yaml_syntax_repair_tool
+
+
+# Neue Beispiele hinzugefügt:
+# - "**Umweltbewusstsein vorgeschoben**"
+# - "B plant, ein neues Auto zu kaufen. A:"
+# - "Wir sollten wirklich auf die Umwelt achten, lass uns lieber Carsharing nutzen."
+# - "*(eigentlich: Angst, B könnte unabhängiger werden)*"
+# - "- |"
+# - "**Fehlende Vorbereitung**"
+# - "B will sich spontan treffen. A:"
+# - "So was muss man doch planen, ich fühle mich da nicht vorbereitet."
+# - "*(eigentlich: A ist verletzt, weil B ihn oft kurzfristig fragt)*"
+# - "- |"
+# - "**Rücksicht auf Dritte**"
+# - "B möchte laute Musik im Wohnzimmer hören. A:"
+# - "Die Nachbarn werden sich beschweren, das können wir nicht bringen."
+# - "*(eigentlich: Eifersucht, weil B Spaß ohne A hat)*"
+# - "- |"
+# - "**Gesundheitswarnung**"
+# - "B will an einem Wettkampf teilnehmen. A:"
+# - "Das ist doch viel zu anstrengend für dich, ich mache mir Sorgen um deine Gesundheit."
+# - "*(eigentlich: Angst, B könnte Aufmerksamkeit bekommen, die A fehlt)*"
+# - "- |"
+# - "**Arbeitslast betont**"
+# - "B bittet A um Unterstützung."
+# - "A: "Ich habe leider schon so viel zu tun, da schaffe ich das nicht."
+# - "*(eigentlich: A fühlt sich ausgenutzt und will Distanz wahren)*"
+# - "- |"
+# - "**Qualitätsanspruch**"
+# - "B schlägt ein neues Projekt vor. A:"
+# - "Nur wenn wir das perfekt umsetzen können, sonst lassen wir es lieber."
+# - "*(eigentlich: Angst, B könnte A übertrumpfen)*"
+# - "- |"
+# - "**Vorschriften als Argument**"
+# - "B möchte etwas schnell realisieren. A:"
+# - "Die Regeln lassen das nicht zu, da können wir nichts machen."
+# - "*(eigentlich: Sorge vor Kontrollverlust)*"
+# - "- |"
+# - "**Scheinbar praktische Empfehlung**"
+# - "B will neuen Freund treffen. A:"
+# - "Bei deinem Arbeitspensum solltest du vielleicht erst mal etwas Ruhe finden."
+# - "*(eigentlich: Neid, A möchte mehr Aufmerksamkeit)*"
+# - "- |"
+# - "**Familienpflichten betonen**"
+# - "B plant einen Wochenendtrip mit Freunden. A:"
+# - "Wir haben schon so lange deine Eltern nicht besucht, das sollten wir dringend nachholen."
+# - "*(eigentlich: Eifersucht und Wunsch nach Bindung)*"
+# - "- |"
+# - "**Betonte Fairness**"
+# - "B bittet um eine kleine Ausnahme. A:"
+# - "Wenn ich das jetzt mache, wäre das den anderen gegenüber unfair."
+# - "*(eigentlich: A fühlt sich verletzt und will B nicht entgegenkommen)*"
+# - "- |"
+# - "**Jobstress vorgeschoben**"
+# - "B will mehr Zeit mit neuen Kollegen verbringen. A:"
+# - "Du solltest dich nach Feierabend lieber erholen statt noch länger im Büro zu bleiben."
+# - "*(eigentlich: Angst, dass B sich beruflich und privat weiter entfernt)*"
+# - "- |"
+# - "**Gesundheitsappell**"
+# - "B plant an einem Marathon teilzunehmen. A:"
+# - "Ich will ja nur, dass du gesund bleibst. Diese extreme Belastung muss doch nicht sein."
+# - "*(eigentlich: Neid auf Bs Disziplin/Fitness)*"
+# - "- |"
+# - "**Freundeskreis kritisiert**"
+# - "B will mit alten Schulfreunden weggehen. A:"
+# - "Sind das nicht die, die ständig über die Stränge schlagen? Mit denen würde ich ungern meine Wochenenden vergeuden."
+# - "*(eigentlich: Eifersucht oder Ausschlussangst)*"
+# - "- |"
+# - "**Zeitplanung als Hemmschuh**"
+# - "A zu B:"
+# - "Wenn du jetzt noch ein Hobby anfängst, bleibt doch gar keine Zeit mehr für unseren Haushalt. Wollen wir nicht erstmal dafür eine Lösung finden?"
+# - "*(eigentlich: Missgunst gegenüber Bs neuer Leidenschaft)*"
+# - "- |"
+# - "**Moralisches Argument**"
+# - "B möchte ein gebrauchtes Auto kaufen. A:"
+# - "Es ist doch ein umweltpolitisches Statement, auf öffentliche Verkehrsmittel umzusteigen. Ein Auto zu kaufen passt doch gar nicht zu unseren Werten."
+# - "*(eigentlich: Angst vor weniger gemeinsam verbrachter Zeit)*"
+# - "- |"
+# - "**Expertise infrage gestellt**"
+# - "Beim Projekt, A zu B:"
+# - "Bist du dir sicher, dass du das alleine stemmen kannst? Lass uns lieber nochmal alles durchgehen."
+# - "*(eigentlich: Sorge, dass B erfolgreich glänzt)*"
+# - "- |"
+# - "**Kinder als Ausrede**"
+# - "B will an einem Abendkurs teilnehmen. A:"
+# - "Denkst du nicht, dass es für die Kleinen verwirrend ist, wenn wir sie abends ständig zu den Großeltern bringen?"
+# - "*(eigentlich: Eifersucht und Verlustangst)*"
+# - "- |"
+# - "**Kostenargument**"
+# - "B will ein Wochenende mit Freunden verreisen. A:"
+# - "Die Preise sind gerade echt unverschämt. Vielleicht sollte man das verschieben."
+# - "*(eigentlich: Angst, nicht dabei zu sein; Eifersucht)*"
+# - "- |"
+# - "**Aufopferung als indirekter Vorwurf**"
+# - "Nach einer Einladung: A zu B:"
+# - "Geh du ruhig hin, ich bleib daheim und kümmer mich um den ganzen Papierkram, damit du keinen Stress hast."
+# - "*(eigentlich: stiller Vorwurf, B würde A vernachlässigen; Kontrolle)*"
+# - "- |"
+# - "**Formales Projektregelwerk**"
+# - "Teamarbeit, A sagt:"
+# - "Laut Protokoll müssen alle Vorschläge erst durch das Leitungsgremium. Wir sollten nichts überstürzen."
+# - "*(eigentlich: Bs Idee blockieren aus Angst, zurückzubleiben)*"
+# - "**Übertriebene Sicherheitsbedenken**"
+# - "B möchte abends joggen gehen. A:"
+# - "In letzter Zeit gab es hier Übergriffe. Jogge lieber morgens, abends ist das zu gefährlich."
+# - "*(eigentlich: Eifersucht, will B abends bei sich haben)*"
+# - "- |"
+# - "**Zeitplan gegen Einladung**"
+# - "B lädt A zu einer Familienfeier ein. A:"
+# - "Ich arbeite im Moment jeden Abend an meinem Projekt. Einen freien Abend kann ich mir da nicht leisten."
+# - "*(eigentlich: Unsicherheit und Angst, Bs Familie nicht zu mögen)*"
+# - "- |"
+# - "**Fachliche Standards betonen**"
+# - "B präsentiert eine kreative Idee im Meeting. A:"
+# - "Wir sollten uns besser an bewährte Prozesse halten, sonst verlieren wir Kunden."
+# - "*(eigentlich: Neid auf Bs Einfallsreichtum)*"
+# - "- |"
+# - "**Gesundheitliche Ausrede**"
+# - "B schlägt eine Bergwanderung vor. A:"
+# - "Du weißt, wie empfindlich mein Knie ist. Lass uns lieber etwas Ruhigeres machen."
+# - "*(eigentlich: Sorge, B ist fitter und A könnte nicht mithalten)*"
+# - "- |"
+# - "**Ökologischer Vorwand**"
+# - "B will ein neues Auto kaufen. A:"
+# - "Der Umwelt zuliebe sollten wir das besser lassen und mehr mit dem Rad fahren."
+# - "*(eigentlich: Wunsch, B weniger mobil und mehr zu Hause zu haben)*"
+# - "- |"
+# - "**Professionalität fordern**"
+# - "B möchte lockere Kleidung im Büro tragen. A:"
+# - "Das wirkt unprofessionell, halt dich besser an den Dresscode."
+# - "*(eigentlich: Angst, B könnte dadurch beliebter wirken)*"
+# - "- |"
+# - "**Verantwortungsbewusstsein betonen**"
+# - "B möchte ein aufwendiges Hobby beginnen. A:"
+# - "Du hast doch schon so viel Verantwortung im Job. Noch ein Hobby würde dich nur ablenken."
+# - "*(eigentlich: Befürchtung, B könnte neue Kontakte knüpfen)*"
+# - "- |"
+# - "**Vertragstreue anführen**"
+# - "B will aus einem gemeinsamen Abo aussteigen. A:"
+# - "Wir haben den Vertrag unterschrieben, das wäre doch unkorrekt, jetzt auszusteigen."
+# - "*(eigentlich: B soll weiter an A gebunden bleiben)*"
+# - "- |"
+# - "**Moralische Belehrung**"
+# - "B möchte zu einem Konzert gehen. A:"
+# - "Der Künstler ist politisch fragwürdig, das sollten wir nicht unterstützen."
+# - "*(eigentlich: Eifersucht auf Bs Freundeskreis)*"
+# - "- |"
+# - "**Logistik als Hindernis**"
+# - "B plant einen Wochenendausflug. A:"
+# - "Die Zugverbindungen sind so schlecht, das wird nur Stress. Bleib doch lieber hier."
+# - "*(eigentlich: Angst, B trifft dort jemanden, z.B. Ex-Partner)*"
+# - "- |"
+# - "**Pseudorationaler Umweltaspekt**"
+# - "B möchte mit Freunden ans Meer fahren."
+# - "A: "Hast du dir mal überlegt, was für einen CO₂-Fußabdruck so ein Trip hinterlässt? Ich finde, wir sollten nachhaltiger leben."
+# - "*(eigentlich: Neid auf Bs Unternehmungslust)*"
+# - "- |"
+# - "**Übertriebene Sorge um Regeln**"
+# - "B plant eine spontane Firmenfeier."
+# - "A: "Laut Vorschrift müssen wir solche Events mindestens zwei Wochen vorher anmelden, sonst gibt es Ärger."
+# - "*(eigentlich: Ärger, nicht gefragt worden zu sein)*"
+# - "- |"
+# - "**Gesundheitliche Bedenken ausbreiten**"
+# - "B überlegt, an einem Marathon teilzunehmen."
+# - "A: "Bei deiner Vorgeschichte mit dem Knie? Ich finde das unverantwortlich. Denk lieber an deine langfristige Gesundheit."
+# - "*(eigentlich: Sorge, dass B bewundert wird)*"
+# - "- |"
+# - "**Verweis auf knappe Ressourcen**"
+# - "B will ein Wochenende wegfahren."
+# - "A: "Unsere Urlaubstage sind begrenzt, vielleicht sollten wir sie für etwas Wichtigeres aufheben."
+# - "*(eigentlich: Unsicherheit, B könne allein mehr Spaß haben)*"
+# - "- |"
+# - "**Übermäßiges Planen**"
+# - "B fragt, ob Freunde zu Besuch kommen können."
+# - "A: "Lass uns das lieber in drei Wochen machen, damit wir es ordentlich vorbereiten können."
+# - "*(eigentlich: Unwohlsein mit den Gästen)*"
+# - "- |"
+# - "**Ermahnung zur Verantwortlichkeit**"
+# - "B möchte ein neues Projekt starten."
+# - "A: "Du weißt, wie schnell man sich übernimmt. Konzentrier dich lieber erst auf das, was du angefangen hast."
+# - "*(eigentlich: Angst, B könne Erfolg haben)*"
+# - "- |"
+# - "**Verweis auf Traditionen in der Familie**"
+# - "B will mit Freunden Silvester verreisen."
+# - "A: "Bei uns verbringt man diesen Abend immer gemeinsam mit der Familie. Alles andere wäre respektlos."
+# - "*(eigentlich: Verletztheit, nicht Priorität zu sein)*"
+# - "- |"
+# - "**Vorgetäuschte Besorgnis über Zeitplan**"
+# - "B möchte einen Kurs besuchen."
+# - "A: "Glaubst du wirklich, du schaffst das neben Arbeit und Haushalt?"
+# - "*(eigentlich: Angst, B könnte neue Kontakte knüpfen)*"
+# - "- |"
+# - "**Fortschritt als Risiko darstellen**"
+# - "B schlägt Modernisierung im Unternehmen vor."
+# - "A: "Das klingt nett, aber lass uns keine Experimente starten, die unser bewährtes System gefährden."
+# - "*(eigentlich: Furcht, Einfluss zu verlieren)*"

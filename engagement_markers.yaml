@@ -1,0 +1,19 @@
+name: "Engagement Indicators"
+description: "Erkennt sprachliche Indikatoren für Engagement und Interesse"
+category: "interaction"
+keywords:
+  - "interessant"
+  - "spannend"
+  - "fasziniert"
+  - "begeistert"
+  - "neugierig"
+  - "verstehen"
+  - "lernen"
+  - "entwickeln"
+  - "verbessern"
+  - "wachsen"
+patterns:
+  - r"\b(das ist interessant|das finde ich spannend)\b"
+  - r"\b(ich möchte mehr|ich will verstehen)\b"
+  - r"\b(erzähl mir mehr|wie funktioniert das)\b"
+weight: 0.6 

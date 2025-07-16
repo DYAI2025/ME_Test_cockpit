@@ -1,0 +1,17 @@
+kategorie: SEMANTIC
+marker:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für DEVELOPMENT_META_COMMUNICATION_MARKER_MARKER
+  examples:
+  - Kommunikation über Muster, Prozesse und das Miteinander, Reflexion auf der Beziehungsebene.
+  - 'description: "Erkennt Muster für development_meta_communication_marker"'
+  - 'pattern: r"(muster.*wird.*ergänzt)"'
+  id: S_DEVELOPMENT_META_COMMUNICATION_MARKER
+  level: 2
+  name: DEVELOPMENT_META_COMMUNICATION
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_7DA2
+  semantic_tags:
+  - development-meta-communication-marker-marker
+marker_name: DEVELOPMENT_META_COMMUNICATION_MARKER_MARKER

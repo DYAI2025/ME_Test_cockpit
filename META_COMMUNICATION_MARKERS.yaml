@@ -1,0 +1,17 @@
+kategorie: ATOMIC
+marker:
+  category: Atomic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für META_COMMUNICATION_MARKERS
+  examples:
+  - Automatisch generierte Beschreibung für META_COMMUNICATION_MARKERS
+  id: M_META_COMMUNICATION_MARKERS
+  level: 1
+  name: META_COMMUNICATIONS
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_E779
+  semantic_tags:
+  - meta-communication-markers
+marker_name: META_COMMUNICATION_MARKERS
+tags:
+- needs_review
