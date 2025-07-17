@@ -1,0 +1,5 @@
+id: A_GREETING
+level: 1
+name: Greeting
+atomic_pattern: ["hallo", "hi", "guten tag"]
+description: Recognizes greetings in German.
