@@ -36,6 +36,7 @@ class MarkerEngine:
         return matches
 
     def evaluate_semantic(self, atomic_matches: List[MarkerMatch]) -> List[MarkerMatch]:
+        """Evaluate simple semantic rules based on atomic matches."""
         results = []
         atomic_ids = [m.marker_id for m in atomic_matches]
         for marker in self.semantic_markers:
@@ -44,6 +45,15 @@ class MarkerEngine:
                 if rule.get('type') == 'frequency':
                     count = atomic_ids.count(rule['marker'])
                     if count < rule.get('min', 1):
+                        satisfied = False
+                        break
+                if rule.get('type') == 'co_occurrence':
+                    m1, m2 = rule.get('markers', [None, None])
+                    window = rule.get('window', 50)
+                    pos1 = [m.start for m in atomic_matches if m.marker_id == m1]
+                    pos2 = [m.start for m in atomic_matches if m.marker_id == m2]
+                    co = any(abs(p1 - p2) <= window for p1 in pos1 for p2 in pos2)
+                    if not co:
                         satisfied = False
                         break
             if satisfied:
