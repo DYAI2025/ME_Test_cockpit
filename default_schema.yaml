@@ -1,0 +1,12 @@
+schema_name: "Marker Schema v1"
+levels:
+  1: Atomic
+  2: Semantic
+  3: Cluster
+  4: Meta
+rule_types:
+  - frequency
+  - co_occurrence
+  - sequence
+  - rate
+  - trend

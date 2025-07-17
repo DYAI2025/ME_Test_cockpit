@@ -1,0 +1,5 @@
+id: A_FAREWELL
+level: 1
+name: Farewell
+atomic_pattern: ["tschueß", "tschuess", "auf wiedersehen"]
+description: Recognizes farewells in German.

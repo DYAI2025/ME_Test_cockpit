@@ -1,0 +1,14 @@
+id: S_POLITE
+level: 2
+name: Politeness
+composed_of:
+  - A_GREETING
+  - A_FAREWELL
+rules:
+  - type: frequency
+    marker: A_GREETING
+    min: 1
+  - type: frequency
+    marker: A_FAREWELL
+    min: 1
+description: Semantic marker for polite conversations requiring at least one greeting and one farewell.
